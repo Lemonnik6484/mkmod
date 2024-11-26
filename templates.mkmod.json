@@ -294,7 +294,7 @@
                 "loader": "21.3.40-beta"
             },
             "instructions": [
-                {"command": "mkdir", "name": "src/main"},
+                {"command": "mkdir", "name": "src/main/java/%mkmod:package_dir%"},
                 {"command": "mkdir", "name": "src/main/resources/assets/%mkmod:id%/lang"},
                 {"command": "mkdir", "name": "gradle/wrapper"},
                 {"command": "mkdir", "name": ".github/workflows"},
