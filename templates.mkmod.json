@@ -291,8 +291,7 @@
                 "javaVersion": "21",
                 "parchment": "1.21.1",
                 "parchment_ver": "2024.11.17",
-                "loader": "21.3.40-beta",
-                "version": "1.21.3"
+                "loader": "21.3.40-beta"
             },
             "instructions": [
                 {"command": "mkdir", "name": "src/main/java/%mkmod:package_dir%"},
