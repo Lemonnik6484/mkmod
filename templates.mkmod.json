@@ -286,7 +286,7 @@
         }
     },
     "neoforge": {
-        "1.21.3": {
+        "1.21.3-ModDevGradle": {
             "variables": {
                 "javaVersion": "21",
                 "parchment": "1.21.1",
