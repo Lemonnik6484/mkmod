@@ -284,5 +284,68 @@
                 }
             ]
         }
+    },
+    "neoforge": {
+        "1.21.3": {
+            "variables": {
+                "javaVersion": "21",
+                "parchment": "1.21.1",
+                "parchment_ver": "2024.11.17",
+                "loader": "21.3.40-beta"
+            },
+            "instructions": [
+                {"command": "mkdir", "name": "src/main"},
+                {"command": "mkdir", "name": "src/main/resources/assets/%mkmod:id%/lang"},
+                {"command": "mkdir", "name": "gradle/wrapper"},
+                {"command": "mkdir", "name": ".github/workflows"},
+
+                {
+                    "command": "copy", 
+                    "files": [
+                        "gradle/gradle-wrapper.jar", 
+                        "gradle/gradle-wrapper.properties"
+                    ], 
+                    "to": "gradle/wrapper"
+                },
+
+                {
+                    "command": "copy", 
+                    "files": [
+                        "resources/en_us.json"
+                    ], 
+                    "to": "src/main/resources/assets/%mkmod:id%/lang"
+                },
+                
+                {
+                    "command": "copy",
+                    "files": [
+                        ".gitattributes",
+                        ".gitignore",
+                        "build.gradle",
+                        "gradle.properties",
+                        "gradlew",
+                        "gradlew.bat",
+                        "settings.gradle",
+                        "TEMPLATE_LICENSE.txt"
+                    ],
+                    "to": ""
+                },
+
+                {
+                    "command": "copy",
+                    "files": [
+                        "java/Config.java",
+                        "java/ExampleMod.java"
+                    ],
+                    "to": "src/main/java/%mkmod:package_dir%"
+                },
+
+                {
+                    "command": "rename",
+                    "dir": "src/main/java/%mkmod:package_dir%",
+                    "file": "ExampleMod.java", "to": "%mkmod:main%.java"
+                }
+            ]
+        }
     }
 }
