@@ -316,6 +316,7 @@
             "instructions": [
                 {"command": "mkdir", "name": "src/main/java/%mkmod:package_dir%"},
                 {"command": "mkdir", "name": "src/main/resources/assets/%mkmod:id%/lang"},
+                {"command": "mkdir", "name": "src/main/temlpates/META-INF"},
                 {"command": "mkdir", "name": "gradle/wrapper"},
                 {"command": "mkdir", "name": ".github/workflows"},
 
@@ -326,6 +327,14 @@
                         "gradle/gradle-wrapper.properties"
                     ], 
                     "to": "gradle/wrapper"
+                },
+
+                {
+                    "command": "copy", 
+                    "files": [
+                        "resources/neoforge.mods.toml"
+                    ], 
+                    "to": "src/main/templater/META-INF"
                 },
 
                 {
