@@ -334,7 +334,7 @@
                     "files": [
                         "resources/neoforge.mods.toml"
                     ], 
-                    "to": "src/main/templater/META-INF"
+                    "to": "src/main/templates/META-INF"
                 },
 
                 {
