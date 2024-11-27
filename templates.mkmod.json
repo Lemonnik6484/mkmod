@@ -419,7 +419,7 @@
             },
             "instructions": [
                 {"command": "mkdir", "name": "src/main/java/%mkmod:package_dir%"},
-                {"command": "mkdir", "name": "src/main/resources/assets/%mkmod:id%/lang"},
+                {"command": "mkdir", "name": "src/main/resources/META-INF"},
                 {"command": "mkdir", "name": "gradle/wrapper"},
                 {"command": "mkdir", "name": ".github/workflows"},
 
@@ -435,9 +435,17 @@
                 {
                     "command": "copy", 
                     "files": [
-                        "resources/en_us.json"
+                        "resources/neoforge.mods.toml"
                     ], 
-                    "to": "src/main/resources/assets/%mkmod:id%/lang"
+                    "to": "src/main/resources/META-INF"
+                },
+
+                {
+                    "command": "copy", 
+                    "files": [
+                        "resources/pack.mcmeta"
+                    ], 
+                    "to": "src/main/resources"
                 },
                 
                 {
