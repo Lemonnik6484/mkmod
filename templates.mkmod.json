@@ -95,6 +95,13 @@
                 "version": "1.21.2"
             }
         },
+        "1.21.4": {
+            "extend": "1.21.3",
+            "variables": {
+                "javaVersion": "21",
+                "yarn": "build.8",
+                "fabricApi": "0.115.1",
+                "version": "1.21.4"
         "1.21.3": {
             "variables": {
                 "javaVersion": "21",
